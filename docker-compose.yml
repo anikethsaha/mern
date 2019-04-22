@@ -1,0 +1,37 @@
+version: '3.4'
+services:
+        web:
+                build:
+                        context: ./
+                        dockerfile: dockerfile
+
+                networks:
+                        - MERN-network
+                links:
+                        - db
+                ports:
+                        - "8000:5000"
+
+                volumes:
+                        - .:/usr/src/app
+                environment:
+                        NODE_ENV: development
+                        MONGO_URL: mongodb://db:27017/test
+
+                stdin_open: true
+                tty: true
+        db:
+                image: mongo:latest
+                volumes:
+                        - ./dbdata:/data/db
+                networks:
+                        - MERN-network
+                ports:
+                        - "27017:27017"
+
+volumes:
+        dbdata:
+
+networks:
+        MERN-network:
+                driver: bridge
