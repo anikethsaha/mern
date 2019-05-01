@@ -46,7 +46,7 @@ $ npm run client:dev
 - Edit the src/server/index.js to make changes in the server
 
 
----
+
 ## technology
 - NodeJS - Server
 - ExpressJS - Nodejs framework
@@ -59,7 +59,7 @@ $ npm run client:dev
 - Babel - Loader and Compiler/Transpiler
 - Jest - Testing Framework
 
----
+
 ## Features
 - [x] Server Side Rendering
 - [x] State Management
