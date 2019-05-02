@@ -1,6 +1,7 @@
 <p align="center">
   
   <img alt="efba logo" src="https://i.ibb.co/T42LYgn/MERNG-1.png" width="150px" />
+  
 </p>
 
 <h2 align="center">MERN-BoilerPlate</h2>
@@ -9,7 +10,7 @@
 </p>
 <br><br>
 
-
+[![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/)
 
  ## Checkout the  [MERNG-Boilerplate](https://github.com/anikethsaha/MERNG-BoilerPlate) for MERN with GraphQL Stack Boilerplate
 
