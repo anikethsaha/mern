@@ -72,5 +72,5 @@ $ npm run client:dev
 - [ ] Examples
 
 
-## [LICENSE](https://github.com/anikethsaha/MERNG-BoilerPlate/blob/master/LICENSE)
+## [LICENSE](https://github.com/anikethsaha/MERN-Boilerplate/blob/master/LICENSE)
 
