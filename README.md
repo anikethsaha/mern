@@ -3,14 +3,23 @@
   <img alt="efba logo" src="https://i.ibb.co/T42LYgn/MERNG-1.png" width="150px" />
   
 </p>
-
 <h2 align="center">MERN-BoilerPlate</h2>
+
+<p align="center">
+
+  <a href="https://dependabot.com/">
+    <img alt="badgeprs" src="https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img alt="badgeprs" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a> 
+  <img alt="badgeprs" src="https://img.shields.io/badge/PRs-Welcome-green.svg" />
+</p>
+
 <p align="center">
   This is boilerplate for MERN stack with integrations like Redux and SSR 
 </p>
 <br><br>
-
-[![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/)
 
  ## Checkout the  [MERNG-Boilerplate](https://github.com/anikethsaha/MERNG-BoilerPlate) for MERN with GraphQL Stack Boilerplate
 
