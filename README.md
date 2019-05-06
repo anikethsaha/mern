@@ -23,10 +23,8 @@
 
  ## Checkout the  [MERNG-Boilerplate](https://github.com/anikethsaha/MERNG-BoilerPlate) for MERN with GraphQL Stack Boilerplate
 
-### [Live-Demo](http://35.200.248.52:5000/#/)
-```bash
-Deployed in Google Cloud Platform using Kubernetes 
-```
+### [Live-Demo](https://aqueous-ravine-35625.herokuapp.com/)
+
 ## Getting Started
 - ##### Clone the project
 - ##### Install the Dependencies
