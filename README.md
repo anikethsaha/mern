@@ -1,23 +1,27 @@
 <p align="center">
-  
+
   <img alt="efba logo" src="https://i.ibb.co/T42LYgn/MERNG-1.png" width="150px" />
-  
+
 </p>
 <h2 align="center">MERN-BoilerPlate</h2>
 
 <p align="center">
+
+ <a href="https://travis-ci.org/anikethsaha/MERN-Boilerplate/branches">
+    <img alt="badgeprs" src="https://travis-ci.org/anikethsaha/MERN-Boilerplate.svg?branch=master" />
+  </a>
 
   <a href="https://dependabot.com/">
     <img alt="badgeprs" src="https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot" />
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img alt="badgeprs" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a> 
+  </a>
   <img alt="badgeprs" src="https://img.shields.io/badge/PRs-Welcome-green.svg" />
 </p>
 
 <p align="center">
-  This is boilerplate for MERN stack with integrations like Redux and SSR 
+  This is boilerplate for MERN stack with integrations like Redux and SSR
 </p>
 <br><br>
 
@@ -39,7 +43,7 @@ $ npm run build
 ```bash
 $ npm run server
 ```
-- ##### To run the webpack-dev-server 
+- ##### To run the webpack-dev-server
 ```bash
 $ npm run client:dev
 ```
@@ -61,7 +65,7 @@ $ npm run client:dev
 - MongoDB - Database
 - ReactJS - Frontend
 - Redux - State Management
-- Docker - Containerization and image 
+- Docker - Containerization and image
 - Eslint - Linter
 - Webpack - Bundler
 - Babel - Loader and Compiler/Transpiler
