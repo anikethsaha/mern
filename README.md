@@ -79,8 +79,8 @@ $ npm run client:dev
 - [x] Image for Container
 - [x] Routing
 - [x] Model Controller Project Structure
-- [ ] Build Pipelines
-- [ ] Tests
+- [X] Build Pipelines
+- [X] Tests
 - [ ] Examples
 
 
