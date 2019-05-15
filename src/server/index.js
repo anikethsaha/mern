@@ -92,3 +92,6 @@ app.listen(app.get('port'),() => {
 console.log(path.join(__dirname, '../public'))
     logger.info( `> Server is running on PORT ${app.get('port')} `);
 })
+
+
+module.exports = app
