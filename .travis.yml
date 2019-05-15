@@ -13,6 +13,6 @@ before_install:
 install:
 - npm install
 script:
-- npm lint
-- npm test
+- npm run lint
+- npm run test
 - npm run coveralls

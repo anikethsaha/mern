@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "jest --forceExit ",
+    "test": "jest --forceExit --coverage",
     "client:dev": "webpack-dev-server --mode=development",
     "webpack": "webpack",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
