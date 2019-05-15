@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { initialState } from './initialState'
 import { resolve } from 'path';
 import _ from 'lodash';
