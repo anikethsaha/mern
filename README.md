@@ -10,6 +10,7 @@
  <a href="https://travis-ci.org/anikethsaha/MERN-Boilerplate/branches">
     <img alt="badgeprs" src="https://travis-ci.org/anikethsaha/MERN-Boilerplate.svg?branch=master" />
   </a>
+<a href='https://coveralls.io/github/anikethsaha/MERN-Boilerplate?branch=master'><img src='https://coveralls.io/repos/github/anikethsaha/MERN-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
 
   <a href="https://dependabot.com/">
     <img alt="badgeprs" src="https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot" />
