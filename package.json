@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "jest --forceExit --coverage",
+    "test": "jest --forceExit ",
     "client:dev": "webpack-dev-server --mode=development",
     "webpack": "webpack",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "coveralls": "jest --coverage --forceExit && cat ./coverage/lcov.info | coveralls",
     "server:dev": "  nodemon NODE_ENV=development --inspect bin/server.js",
     "build": "webpack --watch --mode=development",
     "lint": "eslint .",
