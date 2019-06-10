@@ -38,7 +38,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-redux": "^7.0.3",
-    "react-router-dom": "^5.0.0",
+    "react-router-dom": "^5.0.1",
     "redux": "^4.0.1",
     "winston": "^3.2.1"
   },
