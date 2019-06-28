@@ -1,5 +1,4 @@
 <p align="center">
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
   <img alt="efba logo" src="https://i.ibb.co/T42LYgn/MERNG-1.png" width="150px" />
 
@@ -10,6 +9,9 @@
 
  <a href="https://travis-ci.org/anikethsaha/MERN-Boilerplate/branches">
     <img alt="badgeprs" src="https://travis-ci.org/anikethsaha/MERN-Boilerplate.svg?branch=master" />
+  </a>
+   <a href="#contributors">
+    <img alt="contributors" src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" />
   </a>
 <a href='https://coveralls.io/github/anikethsaha/MERN-Boilerplate?branch=master'><img src='https://coveralls.io/repos/github/anikethsaha/MERN-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
 
@@ -104,7 +106,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
 
-<table><tr><td align="center"><a href="http://anikethsaha.github.io"><img src="https://avatars1.githubusercontent.com/u/26347874?v=4" width="100px;" alt="Anix"/><br /><sub><b>Anix</b></sub></a><br /><a href="#infra-anikethsaha" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN-Boilerplate/commits?author=anikethsaha" title="Tests">⚠️</a> <a href="#ideas-anikethsaha" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-anikethsaha" title="Maintenance">🚧</a> <a href="#design-anikethsaha" title="Design">🎨</a> <a href="https://github.com/anikethsaha/MERN-Boilerplate/commits?author=anikethsaha" title="Code">💻</a></td></tr></table>
+<table><tr><td align="center"><a href="http://anikethsaha.github.io"><img src="https://avatars1.githubusercontent.com/u/26347874?v=4" width="100px;" alt="Anix"/><br /><sub><b>Anix</b></sub></a><br /><a href="#infra-anikethsaha" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN-Boilerplate/commits?author=anikethsaha" title="Tests">⚠️</a> <a href="#ideas-anikethsaha" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-anikethsaha" title="Design">🎨</a> <a href="https://github.com/anikethsaha/MERN-Boilerplate/commits?author=anikethsaha" title="Code">💻</a></td></tr></table>
 
 <table><tr><td align="center"><a href="https://github.com/przemwierzbicki"><img src="https://avatars2.githubusercontent.com/u/47298942?v=4" width="100px;" alt="przemwierzbicki"/><br /><sub><b>przemwierzbicki</b></sub></a><br /><a href="#infra-przemwierzbicki" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN-Boilerplate/commits?author=przemwierzbicki" title="Tests">⚠️</a> <a href="https://github.com/anikethsaha/MERN-Boilerplate/commits?author=przemwierzbicki" title="Code">💻</a></td></tr></table>
 
