@@ -6,6 +6,13 @@
   "commit": false,
   "contributors": [
     {
+      "login": "przemwierzbicki",
+      "name": "przemwierzbicki",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/47298942?v=4",
+      "profile": "https://github.com/przemwierzbicki",
+      "contributions": [
+        "infra",
+        "test",
       "login": "anikethsaha",
       "name": "Anix",
       "avatar_url": "https://avatars1.githubusercontent.com/u/26347874?v=4",
