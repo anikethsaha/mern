@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "anikethsaha",
+      "name": "Anix",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26347874?v=4",
+      "profile": "http://anikethsaha.github.io",
+      "contributions": [
+        "infra",
+        "test",
+        "ideas",
+        "maintenance",
+        "design",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "MERN-Boilerplate",
+  "projectOwner": "anikethsaha",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
