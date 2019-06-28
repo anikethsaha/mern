@@ -13,6 +13,16 @@
       "contributions": [
         "infra",
         "test",
+      "login": "anikethsaha",
+      "name": "Anix",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26347874?v=4",
+      "profile": "http://anikethsaha.github.io",
+      "contributions": [
+        "infra",
+        "test",
+        "ideas",
+        "maintenance",
+        "design",
         "code"
       ]
     }
