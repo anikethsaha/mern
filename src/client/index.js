@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
-import { App } from "../common/components"
 import React from "react"
 import ReactDOM from 'react-dom'
+import App from './App';
+import Root from './Root';
 
 ReactDOM.render(
-      <App />,
-    document.getElementById('app')
-)
+	<Root><App /></Root>,
+	document.getElementById('app')
+);
