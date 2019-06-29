@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import AppRouter from './router/AppRouter';
 
-const App = (props) => (
-    <AppRouter { ...props } />
-);
+class App extends Component {
+    render() {
+        return (
+            <AppRouter { ...this.props } />
+        );
+    }
+};
 
 export default App;
