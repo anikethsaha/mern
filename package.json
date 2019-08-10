@@ -16,6 +16,11 @@
     "docker-start:dev": "npm run webpack && npm run server:dev",
     "docker-start:prod": "npm run lint && npm run webpack && npm run server:prod"
   },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/client/setupTests.js"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

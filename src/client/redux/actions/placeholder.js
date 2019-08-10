@@ -4,4 +4,4 @@ export function placeholder() {
     return {
         type: PLACEHOLDER,
     };
-};
+}
