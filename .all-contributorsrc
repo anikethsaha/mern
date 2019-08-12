@@ -1,38 +1,49 @@
 {
-	"files": [
-		"README.md"
-	],
-	"imageSize": 100,
-	"commit": false,
-	"contributors": [{
-			"login": "anikethsaha",
-			"name": "Anix",
-			"avatar_url": "https://avatars1.githubusercontent.com/u/26347874?v=4",
-			"profile": "http://anikethsaha.github.io",
-			"contributions": [
-				"infra",
-				"test",
-				"ideas",
-				"maintenance",
-				"design",
-				"code"
-			]
-		},
-		{
-			"login": "przemwierzbicki",
-			"name": "przemwierzbicki",
-			"avatar_url": "https://avatars2.githubusercontent.com/u/47298942?v=4",
-			"profile": "https://github.com/przemwierzbicki",
-			"contributions": [
-				"infra",
-				"test",
-				"code"
-			]
-		}
-	],
-	"contributorsPerLine": 7,
-	"projectName": "MERN-Boilerplate",
-	"projectOwner": "anikethsaha",
-	"repoType": "github",
-	"repoHost": "https://github.com"
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "anikethsaha",
+      "name": "Anix",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26347874?v=4",
+      "profile": "http://anikethsaha.github.io",
+      "contributions": [
+        "infra",
+        "test",
+        "ideas",
+        "maintenance",
+        "design",
+        "code"
+      ]
+    },
+    {
+      "login": "przemwierzbicki",
+      "name": "przemwierzbicki",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/47298942?v=4",
+      "profile": "https://github.com/przemwierzbicki",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    },
+    {
+      "login": "anmol5varma",
+      "name": "Anmol Varma",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11690393?v=4",
+      "profile": "https://github.com/anmol5varma",
+      "contributions": [
+        "infra",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "MERN-Boilerplate",
+  "projectOwner": "anikethsaha",
+  "repoType": "github",
+  "repoHost": "https://github.com"
 }
