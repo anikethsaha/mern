@@ -63,7 +63,7 @@
     "eslint-plugin-react": "^7.14.3",
     "jest": "^24.8.0",
     "supertest": "^4.0.2",
-    "webpack": "^4.31.0",
+    "webpack": "^4.39.1",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2",
     "webpack-node-externals": "^1.7.2"
