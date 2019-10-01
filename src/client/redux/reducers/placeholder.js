@@ -7,5 +7,5 @@ export default function (state = initialState, action) {
         case PLACEHOLDER:
         default:
             return state;
-    };
-};
+    }
+}

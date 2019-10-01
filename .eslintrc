@@ -2,9 +2,13 @@
   "env": {
       "browser": true,
       "es6": true,
-      "node": true
+      "node": true,
+      "jest": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "globals": {
       "Atomics": "readonly",
       "SharedArrayBuffer": "readonly"
@@ -22,6 +26,7 @@
   "parser": "babel-eslint",
   "rules": {
     "no-console": "off",
-    "react/jsx-uses-vars": 2
+    "react/jsx-uses-vars": 2,
+    "react/prop-types": 0
   }
 }
