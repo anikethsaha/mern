@@ -7,6 +7,6 @@ class App extends Component {
             <AppRouter { ...this.props } />
         );
     }
-};
+}
 
 export default App;
