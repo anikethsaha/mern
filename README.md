@@ -4,6 +4,7 @@
   
   <img alt="efba logo" src="https://imgur.com/fm5LVFq.png" width="250px" />
 
+<img alt="efba logo" src="https://imgur.com/JeyOdb3.png" width="250px" />
 </p>
 <h2 align="center">MERN-BoilerPlate</h2>
 
