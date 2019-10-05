@@ -39,18 +39,23 @@
 ```bash
 $ npm i
 ```
-- ##### Run the Webpack
+- ##### Run the server
 ```bash
-$ npm run build
+$ npm run server:dev
 ```
-- ##### Run the express server
+
+## Starting development setup
+- ##### Run the webpack server
 ```bash
-$ npm run server
-```
-- ##### To run the webpack-dev-server
+$ npm run watch
+``` 
+and, start making changes in `src/client` , `src/server` and `src/common` folders.
+
+## For running the production server
 ```bash
-$ npm run client:dev
-```
+$ npm run server:prod
+``` 
+
 
 ### You can Also add this using [This Package](https://www.npmjs.com/package/@buildtip/create-web-app)
 ```bash

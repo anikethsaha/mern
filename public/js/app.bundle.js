@@ -39038,7 +39038,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var initialState = {};
-/* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_0__["default"], initialState));
+var store = Object(redux__WEBPACK_IMPORTED_MODULE_1__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_0__["default"], initialState);
+/* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
 

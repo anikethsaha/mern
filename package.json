@@ -7,7 +7,7 @@
     "client:dev": "webpack-dev-server --mode=development",
     "webpack": "webpack",
     "coveralls": "jest --coverage --forceExit && cat ./coverage/lcov.info | coveralls",
-    "server:dev": "  nodemon NODE_ENV=development --inspect bin/server.js",
+    "server:dev": "nodemon NODE_ENV=development --inspect bin/server.js",
     "watch": "webpack --watch --mode=development",
     "lint": "eslint .",
     "server:prod": "cross-env NODE_ENV=production node bin/server.js",

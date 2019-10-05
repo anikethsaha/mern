@@ -14,12 +14,9 @@ const mongoose = require('mongoose');
 
 
 // SSR method importing from ./controller/ssr
-import { renderSSRcomponent } from "./controller/ssr";
+const {renderSSRcomponent} = require("./controller/ssr")
 
-
-import {
-  MONGO_URL
-} from '../../config/index'
+const { MONGO_URL } = require('../../config/index');
 
 
 console.log('MONGO_URl :', MONGO_URL);
