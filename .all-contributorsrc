@@ -49,6 +49,18 @@
         "infra",
         "test"
       ]
+    },
+    {
+      "login": "ypahalajani",
+      "name": "Yash Pahalajani",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/14838485?v=4",
+      "profile": "https://in.linkedin.com/in/ypahalajani",
+      "contributions": [
+        "infra",
+        "code",
+        "doc",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
