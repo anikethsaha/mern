@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types'; This was not being used
 import {Provider} from 'react-redux'
 import store from "../../client/redux";
 
