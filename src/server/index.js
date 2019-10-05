@@ -17,8 +17,8 @@ const mongoose = require('mongoose');
 import { renderSSRcomponent } from "./controller/ssr";
 
 
-import {	
-  MONGO_URL	
+import {
+  MONGO_URL
 } from '../../config/index'
 
 

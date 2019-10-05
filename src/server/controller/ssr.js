@@ -6,7 +6,7 @@ import {
 } from "react-dom/server"
 import App from "../../common/components/app.jsx" // eslint-disable-line
 export const renderSSRcomponent = (req, res) => {
-  var RenderedAppToString = renderToString( < App / > );
+  var RenderedAppToString = renderToString( < App /> );
   var indexHTMLpage = fs.readFileSync('./public/index.html');
   var indexHTMLpageToString = indexHTMLpage.toString();
   var HTMLWithSSRComponentInIt = indexHTMLpageToString.replace("<!-- __APP__ -->", RenderedAppToString);
