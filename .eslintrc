@@ -28,5 +28,10 @@
     "no-console": "off",
     "react/jsx-uses-vars": 2,
     "react/prop-types": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

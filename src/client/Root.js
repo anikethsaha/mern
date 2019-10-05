@@ -1,15 +1,13 @@
-import React from 'react';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import indexReducer from './redux/reducers';
+import React from "react";
+import { Provider } from "react-redux";
 
-const Root = ({ children, initialState = { } }) => {
-    const store = createStore(indexReducer, initialState);
-    return (
-        <Provider store={ store }>
-            { children }
-        </Provider>
-    );
-};
+import store from "./redux";
+
+class Root extends React.Component {
+	render() {
+		const { children } = this.props;
+		return <Provider store={store}>{children}</Provider>;
+	}
+}
 
 export default Root;
