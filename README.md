@@ -1,6 +1,8 @@
 <p align="center">
 
   <img alt="efba logo" src="https://imgur.com/6mJz7Kr.png" width="250px" />
+  
+  <img alt="efba logo" src="https://imgur.com/fm5LVFq.png" width="250px" />
 
 </p>
 <h2 align="center">MERN-BoilerPlate</h2>
