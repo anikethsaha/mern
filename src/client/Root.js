@@ -1,10 +1,9 @@
 import React from 'react';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import indexReducer from './redux/reducers';
 
-const Root = ({ children, initialState = { } }) => {
-    const store = createStore(indexReducer, initialState);
+import store from './redux';
+
+const Root = ({ children }) => {
     return (
         <Provider store={ store }>
             { children }
