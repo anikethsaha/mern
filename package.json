@@ -61,7 +61,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^6.2.2",
-    "eslint-plugin-react": "^7.15.0",
+    "eslint-plugin-react": "^7.16.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.3",
     "supertest": "^4.0.2",
