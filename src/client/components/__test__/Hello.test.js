@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Hello from '../Hello';
+import Hello from '../hello.jsx';
 
 describe('Hello component', () => {
   const wrapper = shallow(<Hello />);
