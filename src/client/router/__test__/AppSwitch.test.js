@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import AppSwitch from '../AppSwitch.jsx';
+import AppSwitch from '../appSwitch.jsx';
 
 describe('AppSwitch component', () => {
   const wrapper = shallow(<AppSwitch />);
