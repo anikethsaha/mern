@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AppRouter from './router/AppRouter';
+import AppRouter from './router/appRouter.jsx';
 
 class App extends Component {
     render() {

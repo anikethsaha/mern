@@ -4,7 +4,7 @@ import React from 'react'; // eslint-disable-line
 import {
   renderToString
 } from "react-dom/server"
-import App from "../../common/components/app.jsx" // eslint-disable-line
+import App from "../../client/app.jsx" // eslint-disable-line
 export const renderSSRcomponent = (req, res) => {
   var RenderedAppToString = renderToString( < App /> );
   var indexHTMLpage = fs.readFileSync('./public/index.html');
