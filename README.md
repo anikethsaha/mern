@@ -9,7 +9,7 @@
 <p align="center">
 
  <a href="https://travis-ci.org/anikethsaha/MERN-Boilerplate/branches">
-    <img alt="badgeprs" src="https://travis-ci.org/anikethsaha/MERN-Boilerplate.svg?branch=master" />
+    <img alt="badgeprs" src="https://travis-ci.org/anikethsaha/MERN.svg?branch=master" />
   </a>
    <a href="#contributors">
     <img alt="contributors" src="https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square" />
