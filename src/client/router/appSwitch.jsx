@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Hello from '../components/hello,jsx';
+import Hello from '../components/hello.jsx';
 
 const AppSwitch = () => (
     <Switch>
