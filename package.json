@@ -20,7 +20,10 @@
 	"jest": {
 		"setupFilesAfterEnv": [
 			"<rootDir>/src/client/setupTests.js"
-		]
+		],
+		"moduleNameMapper": {
+			"\\.(css|less)$": "<rootDir>/src/client/__mocks__/styleMock.js"
+		}
 	},
 	"author": "",
 	"license": "ISC",
