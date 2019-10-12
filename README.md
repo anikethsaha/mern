@@ -35,14 +35,31 @@
 
 [![Edit MERN](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mern-gq5eb?fontsize=14)
 
+## Table of Contents
+
+-   [Getting Started](#getting-started)
+-   [Configurations](#configs-for-addons-v1)
+    -   [`mern.json`](#mernjson)
+-   [Starting development setup](#starting-development-setup)
+    -   [Using CWA](#you-can-also-add-this-using-this-package)
+-   [Start Editing](#start-editing)
+-   [technology](#technology)
+-   [Features](#features)
+-   [addons using `mern.json`](#addons-using-mernjson)
+-   [license](#license)
+-   [contributors](#contributors)
+
+
 
 ## Getting Started
-- ##### Clone the project
-- ##### Install the Dependencies
+- **Clone the project**
+
+- **Install the Dependencies**
 ```bash
 $ npm i
 ```
-- ##### Run the server
+
+- **Run the server**
 ```bash
 $ npm run server:dev
 ```
@@ -83,17 +100,17 @@ More addons are coming soon.
 > these addons should be added before you start editing or working on this project
 
 ## Starting development setup
-- ##### Run the webpack server
+
+- **Run the webpack server**
 ```bash
 $ npm run watch
 ``` 
 and, start making changes in `src/client` , `src/server` and `src/common` folders.
 
-## For running the production server
+- **For running the production server**
 ```bash
 $ npm run server:prod
-``` 
-
+```
 
 ### You can Also add this using [This Package](https://www.npmjs.com/package/@buildtip/create-web-app)
 ```bash
@@ -106,7 +123,9 @@ And then on question `no. 4` that is `Please Select Project Stack [ Required ] :
 
 
 
-## Look for the `config/index.js` for making changes in the configs of the project
+## Start Editing 
+
+Look for the `config/index.js` for making changes in the configs of the project
 
 - *Edit* the src/client/index.js to make changes for client
 
