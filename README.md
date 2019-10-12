@@ -12,7 +12,7 @@
     <img alt="badgeprs" src="https://travis-ci.org/anikethsaha/MERN.svg?branch=master" />
   </a>
    <a href="#contributors">
-    <img alt="contributors" src="https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square" />
+    <img alt="contributors" src="https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square" />
   </a>
 <a href='https://coveralls.io/github/anikethsaha/MERN-Boilerplate?branch=master'><img src='https://coveralls.io/repos/github/anikethsaha/MERN-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
 
