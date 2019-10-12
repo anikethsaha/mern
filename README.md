@@ -71,11 +71,10 @@ And then on question `no. 4` that is `Please Select Project Stack [ Required ] :
 
 
 ## Look for the `config/index.js` for making changes in the configs of the project
-- Edit the src/client/index.js to make changes for client
 
-- Edit the src/components to make changes in components
+- *Edit* the src/client/index.js to make changes for client
 
-- Edit the src/server/index.js to make changes in the server
+- *Edit* the src/server/index.js to make changes in the server
 
 
 
@@ -100,7 +99,8 @@ And then on question `no. 4` that is `Please Select Project Stack [ Required ] :
 - [x] Model Controller Project Structure
 - [X] Build Pipelines
 - [X] Tests
-- [ ] Examples
+- [X] Styling using styled-components (css-in-js)
+- [X] Examples (live in codesandbox)
 
 
 ## [LICENSE](https://github.com/anikethsaha/MERN-Boilerplate/blob/master/LICENSE)
