@@ -1,5 +1,5 @@
 {
-	"name": "MERN-Boilerplate",
+	"name": "MERN",
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
@@ -9,7 +9,7 @@
 		"coveralls": "jest --coverage --forceExit && cat ./coverage/lcov.info | coveralls",
 		"server:dev": "nodemon NODE_ENV=development --inspect bin/server.js",
 		"watch": "webpack --watch --mode=development",
-		"lint": "eslint .",
+		"lint": "eslint . --",
 		"develop": "node ./scripts",
 		"server:prod": "cross-env NODE_ENV=production node bin/server.js",
 		"clean": "rimraf bin && rimraf public/js/app.bundle.js public/js/app.bundle.js.map",
