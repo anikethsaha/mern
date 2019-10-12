@@ -25,6 +25,9 @@
    <a href="#contributors">
     <img alt="contributors" src="https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square" />
   </a>
+<a href="https://app.netlify.com/sites/mern/deploys">
+  <img alt="netlify" src="https://api.netlify.com/api/v1/badges/7d38e333-4856-4eed-99b4-a6635594a281/deploy-status" />
+ </a>
 <a href='https://coveralls.io/github/anikethsaha/MERN-Boilerplate?branch=master'><img src='https://coveralls.io/repos/github/anikethsaha/MERN-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
 
   <a href="https://dependabot.com/">
@@ -79,12 +82,19 @@
   <span class="hljs-attr">"styles"</span>: <span class="hljs-string">"none"</span>, 
   <span class="hljs-attr">"stateManager"</span>: <span class="hljs-string">"none"</span>
 }</code></pre><ul class="list">
-<li>For adding <code>styled-components</code>, add <code>styled-components</code> in <code>styles</code> property</li>
+<li><p>For adding <code>styles</code> </p>
+<ul class="list">
+<li><code>&quot;styles&quot;: &quot;styled-components&quot;</code> for styled-components</li>
+<li><code>&quot;styles&quot;: &quot;css-modules&quot;</code> for css-modules using webpack</li>
 </ul>
-<pre class="hljs"><code><span class="hljs-string">"styles"</span>: <span class="hljs-string">"styled-components"</span>, </code></pre><ul class="list">
-<li>For adding redux store</li>
+</li>
+<li><p>For adding state manager</p>
+<ul class="list">
+<li><code>&quot;stateManager&quot;: &quot;redux&quot;</code> for redux store </li>
 </ul>
-<pre class="hljs"><code><span class="hljs-string">"stateManager"</span>: <span class="hljs-string">"redux"</span></code></pre><p><strong>Run <code>npm run develop</code> or <code>yarn develop</code> after changing <code>mern.json</code></strong> 
+</li>
+</ul>
+<p><strong>Run <code>npm run develop</code> or <code>yarn develop</code> after changing <code>mern.json</code></strong> 
 You can check the <code>scripts</code> folder for the implementation of these. Can even add your own addons. 
 Try to replicat how the other addons are build
 Soon gonna add plugin system in this project, then it will be much simpler to create own plugins which can do different stuffs like SSR with store injections, managing <code>webpack.config.js</code>.
