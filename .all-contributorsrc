@@ -70,10 +70,19 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "wincentrtz",
+      "name": "wincentrtz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/33319957?v=4",
+      "profile": "https://github.com/wincentrtz",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "MERN-Boilerplate",
+  "projectName": "MERN",
   "projectOwner": "anikethsaha",
   "repoType": "github",
   "repoHost": "https://github.com"
