@@ -1,8 +1,22 @@
-import React from 'react';
-import { Container } from './style';
+import React from "react";
 
-const Hello = () => (
-   <Container>Hello</Container>
-);
+class Hello extends React.Component {
+  render() {
+    return (
+      <div>
+        <img
+          src="https://imgur.com/yr0sfsR.png"
+          alt="LOGO"
+          style={{
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: "50%"
+          }}
+        />
+      </div>
+    );
+  }
+}
 
 export default Hello;

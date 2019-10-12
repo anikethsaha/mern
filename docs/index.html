@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Checkout the  [MERNG-Boilerplate](https://github.com/anikethsaha/MERNG-BoilerPlate) for MERN with GraphQL Stack Boilerplate</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><p align="center">
+
+
+<img alt="efba logo" src="https://imgur.com/yr0sfsR.png" width="250px" />
+
+</p>
+<h2 align="center">MERN-BoilerPlate</h2>
+
+<p align="center">
+
+ <a href="https://travis-ci.org/anikethsaha/MERN-Boilerplate/branches">
+    <img alt="badgeprs" src="https://travis-ci.org/anikethsaha/MERN.svg?branch=master" />
+  </a>
+   <a href="#contributors">
+    <img alt="contributors" src="https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square" />
+  </a>
+<a href="https://app.netlify.com/sites/mern/deploys">
+  <img alt="netlify" src="https://api.netlify.com/api/v1/badges/7d38e333-4856-4eed-99b4-a6635594a281/deploy-status" />
+ </a>
+<a href='https://coveralls.io/github/anikethsaha/MERN-Boilerplate?branch=master'><img src='https://coveralls.io/repos/github/anikethsaha/MERN-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
+
+  <a href="https://dependabot.com/">
+    <img alt="badgeprs" src="https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img alt="badgeprs" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <img alt="badgeprs" src="https://img.shields.io/badge/PRs-Welcome-green.svg" />
+</p>
+
+<p><p align="center">
+  This is boilerplate for MERN stack with integrations like Redux and SSR
+</p>
+<br><br></p>
+<h2 id="checkout-the-[merng-boilerplate](https://github.com/anikethsaha/merng-boilerplate)-for-mern-with-graphql-stack-boilerplate"><a class="header-link" href="#checkout-the-[merng-boilerplate](https://github.com/anikethsaha/merng-boilerplate)-for-mern-with-graphql-stack-boilerplate"></a>Checkout the  <a href="https://github.com/anikethsaha/MERNG-BoilerPlate">MERNG-Boilerplate</a> for MERN with GraphQL Stack Boilerplate</h2>
+<p><a href="https://codesandbox.io/s/mern-gq5eb?fontsize=14"><img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Edit MERN"></a></p>
+<h2 id="table-of-contents"><a class="header-link" href="#table-of-contents"></a>Table of Contents</h2>
+<ul class="list">
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#configs-for-addons-v1">Configurations</a><ul class="list">
+<li><a href="#mernjson"><code>mern.json</code></a></li>
+</ul>
+</li>
+<li><a href="#starting-development-setup">Starting development setup</a><ul class="list">
+<li><a href="#you-can-also-add-this-using-this-package">Using CWA</a></li>
+</ul>
+</li>
+<li><a href="#start-editing">Start Editing</a></li>
+<li><a href="#technology">technology</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#addons-using-mernjson">addons using <code>mern.json</code></a></li>
+<li><a href="#license">license</a></li>
+<li><a href="#contributors">contributors</a></li>
+</ul>
+<h2 id="getting-started"><a class="header-link" href="#getting-started"></a>Getting Started</h2>
+<ul class="list">
+<li><p><strong>Clone the project</strong></p>
+</li>
+<li><p><strong>Install the Dependencies</strong></p>
+<pre class="hljs"><code>$ npm i</code></pre></li>
+<li><p><strong>Run the server</strong></p>
+<pre class="hljs"><code>$ npm run server:dev</code></pre></li>
+</ul>
+<h2 id="configs-for-addons-v1"><a class="header-link" href="#configs-for-addons-v1"></a>configs for addons v1</h2>
+<p>You can add addons for this project by simply editing the <code>mern.json</code> and then running <code>npm run develop</code></p>
+<h3 id="`mern.json`"><a class="header-link" href="#`mern.json`"></a><code>mern.json</code></h3>
+<ul class="list">
+<li>default options</li>
+</ul>
+<pre class="hljs"><code>{
+  <span class="hljs-attr">"styles"</span>: <span class="hljs-string">"none"</span>, 
+  <span class="hljs-attr">"stateManager"</span>: <span class="hljs-string">"none"</span>
+}</code></pre><ul class="list">
+<li><p>For adding <code>styles</code> </p>
+<ul class="list">
+<li><code>&quot;styles&quot;: &quot;styled-components&quot;</code> for styled-components</li>
+<li><code>&quot;styles&quot;: &quot;css-modules&quot;</code> for css-modules using webpack</li>
+</ul>
+</li>
+<li><p>For adding state manager</p>
+<ul class="list">
+<li><code>&quot;stateManager&quot;: &quot;redux&quot;</code> for redux store </li>
+</ul>
+</li>
+</ul>
+<p><strong>Run <code>npm run develop</code> or <code>yarn develop</code> after changing <code>mern.json</code></strong> 
+You can check the <code>scripts</code> folder for the implementation of these. Can even add your own addons. 
+Try to replicat how the other addons are build
+Soon gonna add plugin system in this project, then it will be much simpler to create own plugins which can do different stuffs like SSR with store injections, managing <code>webpack.config.js</code>.
+That will be the main feature for <strong>v2</strong></p>
+<p>More addons are coming soon.</p>
+<blockquote>
+<p>these addons should be added before you start editing or working on this project</p>
+</blockquote>
+<h2 id="starting-development-setup"><a class="header-link" href="#starting-development-setup"></a>Starting development setup</h2>
+<ul class="list">
+<li><p><strong>Run the webpack server</strong></p>
+<pre class="hljs"><code>$ npm run watch</code></pre><p>and, start making changes in <code>src/client</code> , <code>src/server</code> and <code>src/common</code> folders.</p>
+</li>
+<li><p><strong>For running the production server</strong></p>
+<pre class="hljs"><code>$ npm run server:prod</code></pre></li>
+</ul>
+<h3 id="you-can-also-add-this-using-[this-package](https://www.npmjs.com/package/@buildtip/create-web-app)"><a class="header-link" href="#you-can-also-add-this-using-[this-package](https://www.npmjs.com/package/@buildtip/create-web-app)"></a>You can Also add this using <a href="https://www.npmjs.com/package/@buildtip/create-web-app">This Package</a></h3>
+<pre class="hljs"><code>$ npm i -g @buildtip/create-web-app
+$ cwa
+</code></pre><p>And then on question <code>no. 4</code> that is <code>Please Select Project Stack [ Required ] :</code> Type: <strong><code>1</code></strong></p>
+<h2 id="start-editing"><a class="header-link" href="#start-editing"></a>Start Editing</h2>
+<p>Look for the <code>config/index.js</code> for making changes in the configs of the project</p>
+<ul class="list">
+<li><p><em>Edit</em> the src/client/index.js to make changes for client</p>
+</li>
+<li><p><em>Edit</em> the src/server/index.js to make changes in the server</p>
+</li>
+</ul>
+<h2 id="technology"><a class="header-link" href="#technology"></a>technology</h2>
+<ul class="list">
+<li>NodeJS - Server</li>
+<li>ExpressJS - Nodejs framework</li>
+<li>MongoDB - Database</li>
+<li>ReactJS - Frontend</li>
+<li>Redux - State Management</li>
+<li>Docker - Containerization and image</li>
+<li>Eslint - Linter</li>
+<li>Webpack - Bundler</li>
+<li>Babel - Loader and Compiler/Transpiler</li>
+<li>Jest - Testing Framework</li>
+</ul>
+<h2 id="features"><a class="header-link" href="#features"></a>Features</h2>
+<ul class="list">
+<li>[x] Server Side Rendering</li>
+<li>[x] Image for Container</li>
+<li>[x] Routing</li>
+<li>[x] Model Controller Project Structure</li>
+<li>[X] Build Pipelines</li>
+<li>[X] Tests</li>
+<li>[X] Examples (live in codesandbox)</li>
+</ul>
+<h2 id="addons-using-`mern.json`"><a class="header-link" href="#addons-using-`mern.json`"></a>addons using <code>mern.json</code></h2>
+<ul class="list">
+<li>[x] State Management<ul class="list">
+<li>Redux</li>
+</ul>
+</li>
+<li>[X] Styling <ul class="list">
+<li>styled-components (css-in-js) </li>
+</ul>
+</li>
+</ul>
+<h2 id="todo---addons"><a class="header-link" href="#todo---addons"></a>todo - addons</h2>
+<ul class="list">
+<li><code>state-manager</code><ul class="list">
+<li>[ ] Mobx</li>
+<li>[ ] Context API</li>
+</ul>
+</li>
+<li><code>styles</code><ul class="list">
+<li>[ ] emotion</li>
+<li>[ ] postcss support (css modules, cssnano)</li>
+<li>[ ] linaria</li>
+<li>[ ] aphrodite</li>
+</ul>
+</li>
+</ul>
+<h2 id="[license](https://github.com/anikethsaha/mern-boilerplate/blob/master/license)"><a class="header-link" href="#[license](https://github.com/anikethsaha/mern-boilerplate/blob/master/license)"></a><a href="https://github.com/anikethsaha/MERN-Boilerplate/blob/master/LICENSE">LICENSE</a></h2>
+<h2 id="contributors"><a class="header-link" href="#contributors"></a>Contributors</h2>
+<p>Thanks goes to these wonderful people (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="http://anikethsaha.github.io"><img src="https://avatars1.githubusercontent.com/u/26347874?v=4" width="100px;" alt="Anix"/><br /><sub><b>Anix</b></sub></a><br /><a href="#infra-anikethsaha" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN/commits?author=anikethsaha" title="Tests">⚠️</a> <a href="#ideas-anikethsaha" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-anikethsaha" title="Maintenance">🚧</a> <a href="#design-anikethsaha" title="Design">🎨</a> <a href="https://github.com/anikethsaha/MERN/commits?author=anikethsaha" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/przemwierzbicki"><img src="https://avatars2.githubusercontent.com/u/47298942?v=4" width="100px;" alt="przemwierzbicki"/><br /><sub><b>przemwierzbicki</b></sub></a><br /><a href="#infra-przemwierzbicki" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN/commits?author=przemwierzbicki" title="Tests">⚠️</a> <a href="https://github.com/anikethsaha/MERN/commits?author=przemwierzbicki" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/anmol5varma"><img src="https://avatars2.githubusercontent.com/u/11690393?v=4" width="100px;" alt="Anmol Varma"/><br /><sub><b>Anmol Varma</b></sub></a><br /><a href="#infra-anmol5varma" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN/commits?author=anmol5varma" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/lexcorp16"><img src="https://avatars2.githubusercontent.com/u/14166260?v=4" width="100px;" alt="Fasoro-Joseph Alexander"/><br /><sub><b>Fasoro-Joseph Alexander</b></sub></a><br /><a href="#infra-lexcorp16" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN/commits?author=lexcorp16" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://in.linkedin.com/in/ypahalajani"><img src="https://avatars3.githubusercontent.com/u/14838485?v=4" width="100px;" alt="Yash Pahalajani"/><br /><sub><b>Yash Pahalajani</b></sub></a><br /><a href="#infra-ypahalajani" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/anikethsaha/MERN/commits?author=ypahalajani" title="Code">💻</a> <a href="https://github.com/anikethsaha/MERN/commits?author=ypahalajani" title="Documentation">📖</a> <a href="https://github.com/anikethsaha/MERN/issues?q=author%3Aypahalajani" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/gtdeng"><img src="https://avatars0.githubusercontent.com/u/10056474?v=4" width="100px;" alt="GT Deng"/><br /><sub><b>GT Deng</b></sub></a><br /><a href="#infra-gtdeng" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://github.com/wincentrtz"><img src="https://avatars2.githubusercontent.com/u/33319957?v=4" width="100px;" alt="wincentrtz"/><br /><sub><b>wincentrtz</b></sub></a><br /><a href="https://github.com/anikethsaha/MERN/commits?author=wincentrtz" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p>
+    </article>
+  </body>
+</html>

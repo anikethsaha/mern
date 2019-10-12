@@ -1,9 +1,12 @@
 import React from "react";
+import { Provider } from "react-redux";
+
+import store from "./store";
 
 class Root extends React.Component {
 	render() {
 		const { children } = this.props;
-		return <div>{children}</div>;
+		return <Provider store={store}>{children}</Provider>;
 	}
 }
 
