@@ -80,18 +80,13 @@ You can add addons for this project by simply editing the `mern.json` and then r
 }
 ```
 
-- For adding `styled-components`, add `styled-components` in `styles` property
+- For adding `styles` 
+  - `"styles": "styled-components"` for styled-components
+  - `"styles": "css-modules"` for css-modules using webpack
 
-```json
-"styles": "styled-components", 
-```
-
-- For adding redux store
-
-```json
-"stateManager": "redux"
-```
-
+- For adding state manager
+  - `"stateManager": "redux"` for redux store 
+ 
 **Run `npm run develop` or `yarn develop` after changing `mern.json`** 
 You can check the `scripts` folder for the implementation of these. Can even add your own addons. 
 Try to replicat how the other addons are build
