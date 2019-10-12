@@ -14,6 +14,9 @@
    <a href="#contributors">
     <img alt="contributors" src="https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square" />
   </a>
+<a href="https://app.netlify.com/sites/mern/deploys">
+  <img alt="netlify" src="https://api.netlify.com/api/v1/badges/7d38e333-4856-4eed-99b4-a6635594a281/deploy-status" />
+ </a>
 <a href='https://coveralls.io/github/anikethsaha/MERN-Boilerplate?branch=master'><img src='https://coveralls.io/repos/github/anikethsaha/MERN-Boilerplate/badge.svg?branch=master' alt='Coverage Status' /></a>
 
   <a href="https://dependabot.com/">
