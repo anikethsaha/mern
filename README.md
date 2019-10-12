@@ -33,7 +33,8 @@
  ## Checkout the  [MERNG-Boilerplate](https://github.com/anikethsaha/MERNG-BoilerPlate) for MERN with GraphQL Stack Boilerplate
 
 
-[![Edit MERN](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mern-ntobn?fontsize=14)
+[![Edit MERN](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mern-gq5eb?fontsize=14)
+
 
 ## Getting Started
 - ##### Clone the project
