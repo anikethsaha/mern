@@ -1,7 +1,8 @@
 import React from 'react';
+import { Container } from './style';
 
 const Hello = () => (
-    <div>Hello</div>
+   <Container>Hello</Container>
 );
 
 export default Hello;
