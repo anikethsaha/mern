@@ -47,6 +47,41 @@ $ npm i
 $ npm run server:dev
 ```
 
+## configs for addons v1
+You can add addons for this project by simply editing the `mern.json` and then running `npm run develop`
+
+### `mern.json`
+- default options
+
+```json
+{
+  "styles": "none", 
+  "stateManager": "none"
+}
+```
+
+- For adding `styled-components`, add `styled-components` in `styles` property
+
+```json
+"styles": "styled-components", 
+```
+
+- For adding redux store
+
+```json
+"stateManager": "redux"
+```
+
+**Run `npm run develop` or `yarn develop` after changing `mern.json`** 
+You can check the `scripts` folder for the implementation of these. Can even add your own addons. 
+Try to replicat how the other addons are build
+Soon gonna add plugin system in this project, then it will be much simpler to create own plugins which can do different stuffs like SSR with store injections, managing `webpack.config.js`.
+That will be the main feature for **v2**
+
+More addons are coming soon.
+
+> these addons should be added before you start editing or working on this project
+
 ## Starting development setup
 - ##### Run the webpack server
 ```bash
@@ -94,16 +129,30 @@ And then on question `no. 4` that is `Please Select Project Stack [ Required ] :
 
 ## Features
 - [x] Server Side Rendering
-- [x] State Management
 - [x] Image for Container
 - [x] Routing
 - [x] Model Controller Project Structure
 - [X] Build Pipelines
 - [X] Tests
-- [X] Styling using styled-components (css-in-js)
 - [X] Examples (live in codesandbox)
 
+## addons using `mern.json`
+- [x] State Management
+  - Redux
+- [X] Styling 
+  - styled-components (css-in-js) 
 
+
+## todo - addons
+- `state-manager`
+  - [ ] Mobx
+  - [ ] Context API
+- `styles`
+  - [ ] emotion
+  - [ ] postcss support (css modules, cssnano)
+  - [ ] linaria
+  - [ ] aphrodite
+  
 ## [LICENSE](https://github.com/anikethsaha/MERN-Boilerplate/blob/master/LICENSE)
 
 
