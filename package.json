@@ -10,6 +10,7 @@
 		"server:dev": "nodemon NODE_ENV=development --inspect bin/server.js",
 		"watch": "webpack --watch --mode=development",
 		"lint": "eslint .",
+		"develop": "node ./scripts",
 		"server:prod": "cross-env NODE_ENV=production node bin/server.js",
 		"clean": "rimraf bin && rimraf public/js/app.bundle.js public/js/app.bundle.js.map",
 		"slate": "rimraf node_modules && npm install",
