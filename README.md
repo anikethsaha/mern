@@ -88,6 +88,7 @@ You can add addons for this project by simply editing the `mern.json` and then r
   - `"stateManager": "redux"` for redux store 
  
 **Run `npm run develop` or `yarn develop` after changing `mern.json`** 
+
 You can check the `scripts` folder for the implementation of these. Can even add your own addons. 
 Try to replicat how the other addons are build
 Soon gonna add plugin system in this project, then it will be much simpler to create own plugins which can do different stuffs like SSR with store injections, managing `webpack.config.js`.
@@ -103,7 +104,7 @@ More addons are coming soon.
 ```bash
 $ npm run watch
 ``` 
-and, start making changes in `src/client` , `src/server` and `src/common` folders.
+and, start making changes in `src/client` and `src/server` folders.
 
 - **For running the production server**
 ```bash
@@ -167,6 +168,7 @@ Look for the `config/index.js` for making changes in the configs of the project
 - `styles`
   - [ ] emotion
   - [ ] postcss support (css modules, cssnano)
+  - [X] css modules (using webpack)
   - [ ] linaria
   - [ ] aphrodite
   
