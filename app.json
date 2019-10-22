@@ -1,0 +1,10 @@
+{
+	"name": "MERN",
+	"description": "a Simple , extendable mern boilerplate",
+	"repository": "https://github.com/anikethsaha/mern",
+	"buildpacks": [
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}
