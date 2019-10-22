@@ -1,109 +1,82 @@
-const path = require('path');
-var webpack = require('webpack');
-// const nodeExternals = require('webpack-node-externals');
-const BrowserConfig = {
-	name: 'browser',
-	entry: './src/client/index.js',
-	output: {
-		path: path.resolve(__dirname),
-		filename: './public/js/app.bundle.js',
-		publicPath: '/'
-	},
-	target: 'web',
-	module: {
-		rules: [
-			{
-				test: /\.js?$/,
-				exclude: /node_modules/,
-				use: 'babel-loader'
-			},
-			{
-				test: /\.jsx?$/,
-				exclude: /node_modules/,
-				use: 'babel-loader'
-			},
-			{
-				test: /\.css$/,
-				use: [
-					'style-loader',
-					{
-						loader: 'css-loader',
-						options: {
-							importLoaders: 1,
-							modules: true
-						}
-					}
-				]
-			}
-		]
-	},
-	devServer: {
-		historyApiFallback: true
-	},
-	stats: {
-		colors: true
-	},
-	optimization: {
-		splitChunks: {
-			chunks: 'async',
-			minSize: 30000,
-			maxSize: 0,
-			minChunks: 1,
-			maxAsyncRequests: 5,
-			maxInitialRequests: 3,
-			automaticNameDelimiter: '~',
-			name: true,
-			cacheGroups: {
-				vendors: {
-					test: /[\\/]node_modules[\\/]/,
-					priority: -10
+const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
+
+const optimization = {
+	minimize: true,
+	minimizer: [
+		new TerserPlugin({
+			terserOptions: {
+				warnings: false,
+				compress: {
+					comparisons: false
 				},
-				default: {
-					minChunks: 2,
-					priority: -20,
-					reuseExistingChunk: true
+				parse: {},
+				mangle: true,
+				output: {
+					comments: false,
+					ascii_only: true
 				}
-			}
-		}
-	},
-	devtool: 'source-map',
-	plugins: [
-		new webpack.DefinePlugin({
-			__isBrowser__: 'true'
+			},
+			parallel: true,
+			cache: true,
+			sourceMap: true
 		})
 	]
+	// nodeEnv: 'production',
+	// sideEffects: true,
+	// concatenateModules: true,
+	// runtimeChunk: 'single',
+	// splitChunks: {
+	// 	chunks: 'all',
+	// 	maxInitialRequests: 10,
+	// 	minSize: 0,
+	// 	cacheGroups: {
+	// 		vendor: {
+	// 			test: /[\\/]node_modules[\\/]/,
+	// 			name(module) {
+	// 				const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+	// 				return `npm.${packageName.replace('@', '')}`;
+	// 			}
+	// 		}
+	// 	}
+	// }
 };
-
-const ServerConfig = {
-	name: 'server',
-	entry: './src/server/index.js',
-	output: {
-		path: path.resolve(__dirname),
-		filename: './bin/server.js',
-		libraryTarget: 'commonjs2',
-		publicPath: '/'
-	},
-	node: {
-		__dirname: false
-	},
-	target: 'node',
-	// externals: [nodeExternals()],
+const devSplitChunk = {
+	splitChunks: {
+		chunks: 'async',
+		minSize: 30000,
+		maxSize: 0,
+		minChunks: 1,
+		maxAsyncRequests: 5,
+		maxInitialRequests: 3,
+		automaticNameDelimiter: '~',
+		name: true,
+		cacheGroups: {
+			vendors: {
+				test: /[\\/]node_modules[\\/]/,
+				priority: -10
+			},
+			default: {
+				minChunks: 2,
+				priority: -20,
+				reuseExistingChunk: true
+			}
+		}
+	}
+};
+module.exports = {
 	plugins: [
 		new webpack.DefinePlugin({
-			__isBrowser__: 'false'
+			__isDev__: process.env.NODE_ENV === 'development'
 		})
 	],
+
 	module: {
 		rules: [
 			{
-				test: /\.js?$/,
-				exclude: /node_modules/,
-				use: 'babel-loader'
-			},
-			{
-				test: /\.jsx?$/,
-				exclude: /node_modules/,
-				use: 'babel-loader'
+				test: /\.(js|jsx)$/,
+				loader: 'babel-loader',
+				exclude: /node_modules/
 			},
 			{
 				test: /\.css$/,
@@ -120,33 +93,5 @@ const ServerConfig = {
 			}
 		]
 	},
-	optimization: {
-		splitChunks: {
-			chunks: 'async',
-			minSize: 30000,
-			maxSize: 0,
-			minChunks: 1,
-			maxAsyncRequests: 5,
-			maxInitialRequests: 3,
-			automaticNameDelimiter: '~',
-			name: true,
-			cacheGroups: {
-				vendors: {
-					test: /[\\/]node_modules[\\/]/,
-					priority: -10
-				},
-				default: {
-					minChunks: 2,
-					priority: -20,
-					reuseExistingChunk: true
-				}
-			}
-		}
-	},
-	devServer: {
-		historyApiFallback: true
-	}
+	optimization: process.env.NODE_ENV === 'production' ? optimization : devSplitChunk
 };
-
-module.exports = [BrowserConfig, ServerConfig];
-// module.exports =[ BrowserConfig ];
