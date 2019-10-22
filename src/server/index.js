@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const winston = require('winston');
+
 var expressControllers = require('express-controller');
 var session = require('express-session');
 const cors = require('cors');
@@ -8,7 +8,6 @@ const helmet = require('helmet');
 const { port, sessionSecretKey } = require('../../config');
 const path = require('path');
 var csrf = require('csurf');
-
 const mongoose = require('mongoose');
 // var RateLimit = require('express-rate-limit')
 
@@ -50,18 +49,6 @@ app.use(cors());
     delayMs: 0 // disabled
   });
 */
-// loggin middleware
-const logger = winston.createLogger({
-	level: 'info',
-	transports: [
-		new winston.transports.Console(),
-		new winston.transports.File({ filename: '../../logs/error.log', level: 'error' }),
-		new winston.transports.File({ filename: '../../logs/debug.log', level: 'debug' }),
-		new winston.transports.File({ filename: '../../logs/crit.log', level: 'crit' }),
-		new winston.transports.File({ filename: '../../logs/warn.log', level: 'warn' }),
-		new winston.transports.File({ filename: '../../logs/combined.log' })
-	]
-});
 
 // V
 // static files and views
@@ -80,12 +67,11 @@ expressControllers.setDirectory(path.join(__dirname, '/controller')).bind(app);
 app.get('/', renderSSRcomponent);
 
 if (process.env.NODE_ENV === 'production') {
-	console.log('__dirname :', __dirname);
 	app.use(express.static(path.join(__dirname, '../client/public')));
 }
 
 app.listen(app.get('port'), () => {
-	logger.info(`> Server is running on PORT ${app.get('port')} `);
+	console.log(`> Server is running on PORT ${app.get('port')} `);
 });
 
 module.exports = app;
