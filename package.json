@@ -49,8 +49,7 @@
 		"owasp-password-strength-test": "^1.3.0",
 		"react": "^16.10.2",
 		"react-dom": "^16.10.2",
-		"react-router-dom": "^5.0.1",
-		"winston": "^3.2.1"
+		"react-router-dom": "^5.0.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.5.5",
