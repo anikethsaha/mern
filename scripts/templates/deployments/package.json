@@ -1,0 +1,12 @@
+{
+	"name": "dist",
+	"version": "1.0.0",
+	"description": "This is the production version of the main project",
+	"main": "server/index.js",
+	"scripts": {
+		"start": "node server"
+	},
+	"keywords": [],
+	"author": "Aniketh Saha",
+	"license": "ISC"
+}
