@@ -1,7 +1,6 @@
 {
-  "addons": [
-
-  ],
+	"repository": "https://github.com/anikethsaha/mern",
+  "addons": [],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
@@ -16,7 +15,6 @@
     }
   },
   "name": "mern",
-  "scripts": {
-  },
+  "scripts": {},
   "stack": "heroku-18"
 }
