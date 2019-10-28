@@ -6,6 +6,6 @@ describe('AppSwitch component', () => {
   const wrapper = shallow(<AppSwitch />);
 
   it('renders correctly', () => {
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.debug()).toMatchSnapshot();
   });
 });

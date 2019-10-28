@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppSwitch component renders correctly 1`] = `ShallowWrapper {}`;
+exports[`AppSwitch component renders correctly 1`] = `
+"<Switch>
+  <Route exact={true} path=\\"/\\" component={[Function: Hello]} />
+  <Route exact={true} path=\\"/test\\" component={[Function: component]} />
+</Switch>"
+`;
