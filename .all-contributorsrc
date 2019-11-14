@@ -79,10 +79,19 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "elsonlim",
+      "name": "elsonlim",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/10349496?v=4",
+      "profile": "https://github.com/elsonlim",
+      "contributions": [
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "MERN",
+  "projectName": "mern",
   "projectOwner": "anikethsaha",
   "repoType": "github",
   "repoHost": "https://github.com"
