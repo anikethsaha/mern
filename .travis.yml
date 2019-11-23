@@ -9,6 +9,8 @@ branches:
 cache:
   directories:
   - node_modules
+  - dist
+  - .cache
 before_install:
 - npm update
 install:
