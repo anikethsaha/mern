@@ -11,6 +11,7 @@ cache:
   - node_modules
   - dist
   - .cache
+  - bin
 before_install:
 - npm update
 install:
