@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {
-		"test": "jest --forceExit ",
+		"test": "TZ=UTC jest --maxWorkers=4 --forceExit ",
 		"client:start": "webpack-dev-server --mode=development",
 		"webpack": "npm run clean && webpack --mode=development --config webpack.dev.js",
-		"coveralls": "jest --coverage --forceExit && cat ./coverage/lcov.info | coveralls",
+		"coveralls": "TZ=UTC jest --maxWorkers=4 --coverage --forceExit && cat ./coverage/lcov.info | coveralls",
 		"server:dev": "nodemon NODE_ENV=development --inspect bin/server.js",
 		"watch": "webpack --watch --mode=development --config webpack.dev.js",
 		"lint": "eslint . ",
