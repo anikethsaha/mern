@@ -71,7 +71,7 @@
 		"jest": "^24.8.0",
 		"make-dir-cli": "^2.0.0",
 		"ncp": "^2.0.0",
-		"nodemon": "^1.19.3",
+		"nodemon": "^2.0.1",
 		"rimraf": "^3.0.0",
 		"standard-version": "^7.0.0",
 		"supertest": "^4.0.2",
