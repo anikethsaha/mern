@@ -38,7 +38,7 @@
 		"body-parser": "^1.19.0",
 		"cors": "^2.8.4",
 		"csurf": "^1.10.0",
-		"ejs": "^2.6.1",
+		"ejs": "^3.0.1",
 		"express": "^4.17.1",
 		"express-controller": "^0.3.2",
 		"express-limiter": "^1.6.1",
