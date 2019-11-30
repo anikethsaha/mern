@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- '8'
+- '10'
 services: mongodb
 branches:
   only:
@@ -9,11 +9,17 @@ branches:
 cache:
   directories:
   - node_modules
+  - dist
+  - .cache
+  - bin
 before_install:
 - npm update
 install:
 - npm install
 script:
+- npm run webpack
+- ./scripts/lighthouse.sh
 - npm run lint
 - npm run test
 - npm run coveralls
+
