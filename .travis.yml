@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- '8'
+- '10'
 services: mongodb
 branches:
   only:
@@ -20,3 +20,5 @@ script:
 - npm run lint
 - npm run test
 - npm run coveralls
+- ./scripts/lighthouse.sh
+
