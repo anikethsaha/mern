@@ -17,7 +17,7 @@ before_install:
 install:
 - npm install
 script:
-- npm run build
+- npm run webpack
 - ./scripts/lighthouse.sh
 - npm run lint
 - npm run test
