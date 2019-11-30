@@ -4,7 +4,7 @@ RETURN_CODE=0
 
   . ./scripts/funtions.sh
   startserver
-  sleep 3
+  wait_for_app_services
   echo ""
   echo "> Running lighthouse"
   npx lhci autorun
