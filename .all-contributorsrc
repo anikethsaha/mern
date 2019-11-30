@@ -88,11 +88,23 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "jeffin143",
+      "name": "jeffin sam",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/21286134?v=4",
+      "profile": "http://www.jeffinsam.me",
+      "contributions": [
+        "infra",
+        "bug",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "mern",
   "projectOwner": "anikethsaha",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
