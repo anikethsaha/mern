@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- '8'
+- '10'
 services: mongodb
 branches:
   only:
@@ -17,6 +17,9 @@ before_install:
 install:
 - npm install
 script:
+- npm run webpack
+- ./scripts/lighthouse.sh
 - npm run lint
 - npm run test
 - npm run coveralls
+
