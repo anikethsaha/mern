@@ -1,6 +1,7 @@
 // const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const optimization = {
 	minimize: true,
@@ -69,16 +70,42 @@ module.exports = {
 	plugins: [
 		new webpack.DefinePlugin({
 			__isDev__: process.env.NODE_ENV === 'development'
-		})
+		}),
+		new MiniCssExtractPlugin({ filename: 'styles.css' }),
 	],
 
 	module: {
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
-				loader: 'babel-loader',
-				exclude: /node_modules/
-			}
+				exclude: /node_modules/,
+				use: [
+					{ loader: 'babel-loader' },
+					{
+						loader: 'linaria/loader',
+						options: { sourceMap: dev },
+					},
+				]
+			},
+			{
+				test: /\.css$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							hmr: process.env.NODE_ENV !== 'production',
+						},
+					},
+					{
+						loader: 'css-loader',
+						options: { sourceMap: dev },
+					},
+				],
+			},
+			{
+				test: /\.(jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
+				use: [{ loader: 'file-loader' }],
+			},
 		]
 	},
 	optimization: process.env.NODE_ENV === 'production' ? optimization : devSplitChunk
