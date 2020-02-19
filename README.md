@@ -49,6 +49,12 @@
 -   [license](#license)
 -   [contributors](#contributors)
 
+## Support 
+
+
+<a href="https://www.buymeacoffee.com/eydPs6n" target="_blank"  ><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 25px !important;width: 50px !important;" ></a>
+
+
 ## Getting Started
 
 -   **Clone the project**
@@ -206,3 +212,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
