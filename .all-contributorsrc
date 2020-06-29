@@ -99,6 +99,17 @@
         "bug",
         "code"
       ]
+    },
+    {
+      "login": "ypahalajani",
+      "name": "Yash Pahalajani",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/14838485?v=4",
+      "profile": "https://in.linkedin.com/in/ypahalajani",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+
     }
   ],
   "contributorsPerLine": 7,
