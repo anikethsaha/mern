@@ -4,11 +4,11 @@
 	"description": "",
 	"scripts": {
 		"test": "jest --forceExit ",
-		"client:start": "webpack-dev-server --mode=development --config webpack.dev.js",
-		"webpack": "npm run clean && webpack --mode=development --config webpack.dev.js",
+		"client:start": "webpack-dev-server --mode=development --config .webpack/webpack.dev.js",
+		"webpack": "npm run clean && webpack --mode=development --config .webpack/webpack.dev.js",
 		"coveralls": "jest --coverage --forceExit && cat ./coverage/lcov.info | coveralls",
 		"server:dev": "nodemon NODE_ENV=development --inspect bin/server.js",
-		"watch": "webpack --watch --mode=development --config webpack.dev.js",
+		"watch": "webpack --watch --mode=development --config .webpack/webpack.dev.js",
 		"lint": "eslint . ",
 		"lint:fix": "eslint . --fix",
 		"server:prod": "nodemon NODE_ENV=production dist/server",
@@ -20,7 +20,7 @@
 		"docker-start:prod": "npm run build && npm run server:prod",
 		"prod:clean": "rimraf dist",
 		"prod:build": "make-dir ./dist && make-dir ./dist/server && ncp ./public ./dist/public && make-dir ./dist/public/js",
-		"build": "cross-env NODE_ENV=production webpack --config  webpack.prod.js",
+		"build": "cross-env NODE_ENV=production webpack --config  .webpack/webpack.prod.js",
 		"prebuild": "npm run prod:clean && npm run prod:build"
 	},
 	"jest": {

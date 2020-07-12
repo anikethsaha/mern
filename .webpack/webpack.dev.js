@@ -8,22 +8,22 @@ const BrowserConfig = {
 	entry: './src/client/index.js',
 	output: {
 		path: path.resolve(__dirname),
-		filename: './public/js/app.bundle.js',
-		publicPath: '/'
+		filename: '../public/js/app.bundle.js',
+		publicPath: '/',
 	},
 	target: 'web',
 	devServer: {
-		historyApiFallback: true
+		historyApiFallback: true,
 	},
 	stats: {
-		colors: true
+		colors: true,
 	},
 	devtool: 'source-map',
 	plugins: [
 		new webpack.DefinePlugin({
-			__isBrowser__: 'true'
-		})
-	]
+			__isBrowser__: 'true',
+		}),
+	],
 };
 
 const ServerConfig = {
@@ -31,23 +31,23 @@ const ServerConfig = {
 	entry: './src/server/index.js',
 	output: {
 		path: path.resolve(__dirname),
-		filename: './bin/server.js',
+		filename: '../bin/server.js',
 		libraryTarget: 'commonjs2',
-		publicPath: '/'
+		publicPath: '/',
 	},
 	node: {
-		__dirname: false
+		__dirname: false,
 	},
 	target: 'node',
 	plugins: [
 		new webpack.DefinePlugin({
-			__isBrowser__: 'false'
-		})
+			__isBrowser__: 'false',
+		}),
 	],
 
 	devServer: {
-		historyApiFallback: true
-	}
+		historyApiFallback: true,
+	},
 };
 
 const browserWebpackConfig = merge(common, BrowserConfig);
