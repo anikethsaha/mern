@@ -68,7 +68,7 @@
 		"enzyme-adapter-react-16": "^1.14.0",
 		"eslint": "^6.2.2",
 		"eslint-plugin-react": "^7.16.0",
-		"jest": "^24.8.0",
+		"jest": "^26.1.0",
 		"make-dir-cli": "^2.0.0",
 		"ncp": "^2.0.0",
 		"nodemon": "^2.0.1",
