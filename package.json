@@ -73,7 +73,7 @@
 		"ncp": "^2.0.0",
 		"nodemon": "^2.0.1",
 		"rimraf": "^3.0.0",
-		"standard-version": "^7.0.0",
+		"standard-version": "^8.0.1",
 		"supertest": "^4.0.2",
 		"terser-webpack-plugin": "^2.2.1",
 		"webpack": "^4.31.0",
