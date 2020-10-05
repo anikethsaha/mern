@@ -93,6 +93,7 @@ You can add addons for this project by simply editing the `mern.json` and then r
 
 -   For adding state manager
     -   `"stateManager": "redux"` for redux store
+    -   `"stateManager": "context-api"` for react context api store
 
 **Run `npm run develop` or `yarn develop` after changing `mern.json`**
 
@@ -104,6 +105,32 @@ That will be the main feature for **v2**
 More addons are coming soon.
 
 > these addons should be added before you start editing or working on this project
+
+### Context API Usage
+
+```js
+import { Store, exampleActionCreator } from "../store"
+
+function MyComponent() {
+  const { state, dispatch } = useContext(Store);
+
+  useEffect(() => {
+    // example of some dynamic action
+    if (!state.data) {
+      // example call of an action
+      dispatch(exampleActionCreator("example data"))
+    }
+  }, [state, dispatch])
+
+  // example use of context state
+  return (
+    <div className="MyComponent">
+      <h1>Hello MyComponent</h1>
+      <h2>State: {state.data}</h2>
+    </div>
+  );
+}
+```
 
 ## Starting development setup
 
